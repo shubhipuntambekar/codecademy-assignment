@@ -1,0 +1,24 @@
+summary: Upload a new cat image
+parameters:
+  - name: file
+    in: formData
+    type: file
+    required: true
+    description: The cat image file to upload
+responses:
+  201:
+    description: Cat image uploaded successfully
+    schema:
+      type: object
+      properties:
+        data:
+          type: integer
+        message:
+          type: string
+    headers:
+      Location:
+        type: string
+    examples:
+      application/json:
+        data: "1"
+        message: "File saved successfully."

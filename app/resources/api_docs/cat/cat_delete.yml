@@ -1,0 +1,36 @@
+summary: Delete a specific cat image by ID
+parameters:
+  - name: cat_id
+    in: path
+    type: string
+    required: true
+    description: The ID of the cat image to delete
+responses:
+  200:
+    description: Cat image deleted successfully
+    schema:
+      type: object
+      properties:
+        data:
+          type: integer
+        message:
+          type: string
+    headers:
+      Location:
+        type: string
+    examples:
+      application/json:
+        data: "1"
+        message: "Cat image deleted successfully!"
+  400:
+    description: Cat image not found
+    schema:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            code:
+              type: integer
+            message:
+              type: string

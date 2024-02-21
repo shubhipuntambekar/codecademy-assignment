@@ -1,0 +1,13 @@
+summary: Get a list of cat images
+responses:
+  200:
+    description: Successful response
+    schema:
+      type: object
+      properties:
+        data:
+          type: object
+          additionalProperties:
+            type: string
+        message:
+          type: string

@@ -1,0 +1,41 @@
+summary: Update a specific cat image by ID
+parameters:
+  - name: cat_id
+    in: path
+    type: integer
+    required: true
+    description: The ID of the cat image to update
+  - name: file
+    in: formData
+    type: file
+    required: true
+    description: The updated cat image file
+responses:
+  200:
+    description: Cat image updated successfully
+    schema:
+      type: object
+      properties:
+        data:
+          type: integer
+        message:
+          type: string
+    headers:
+      Location:
+        type: string
+    examples:
+      application/json:
+        data: "1"
+        message: "File updated successfully."
+  400:
+    description: Cat image not found
+    schema:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            code:
+              type: integer
+            message:
+              type: string

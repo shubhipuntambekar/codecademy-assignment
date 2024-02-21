@@ -1,0 +1,24 @@
+summary: Get a specific cat image by ID
+parameters:
+  - name: cat_id
+    in: path
+    type: integer
+    required: true
+    description: The ID of the cat image to retrieve
+responses:
+  200:
+    description: Successful response
+    schema:
+      type: file
+  400:
+    description: Cat image not found
+    schema:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            code:
+              type: integer
+            message:
+              type: string
