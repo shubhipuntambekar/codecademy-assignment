@@ -1,5 +1,6 @@
 # codecademy-assignment
 
+### Language used: Python3 + Flask
 ### Running the assignment
 #### 1. Via Docker:
     docker build -t codecademy-assignment .
