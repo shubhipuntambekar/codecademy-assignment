@@ -3,7 +3,7 @@
 ### Language used: Python3 + Flask
 ### Requirements: pip, python3, docker
 ### Running the assignment
-#### 1. Via Docker (docker must be installed): 
+#### 1. Via Docker (Go to the codecademy-assignment directory & docker must be installed): 
     docker build -t codecademy-assignment .
     docker run -p 5000:5000 codecademy-assignment  
 #### 2. Directly (Go to the codecademy-assignment directory)
