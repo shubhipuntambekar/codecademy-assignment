@@ -2,6 +2,8 @@
 
 ### Language used: Python3 + Flask
 ### Requirements: pip, python3, docker
+### Downloading the repository:
+    git clone git@github.com:shubhipuntambekar/codecademy-assignment.git
 ### Running the assignment
 #### 1. Via Docker (Go to the codecademy-assignment directory & docker must be installed): 
     docker build -t codecademy-assignment .
